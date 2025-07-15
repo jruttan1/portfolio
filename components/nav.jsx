@@ -5,7 +5,9 @@ export default function Nav() {
   const navItems = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
-    { href: "#footer", label: "Projects" },
+    { href: "#projects", label: "Projects" },
+    { href: "#skills", label: "Skills" },
+    { href: "#experience", label: "Experience" },
     { href: "#contact", label: "Contact" }
   ]
 

@@ -46,9 +46,9 @@ const Hyperspeed = ({
       background: 0x000000,
       shoulderLines: 0xffffff,
       brokenLines: 0xffffff,
-      leftCars: [0xd856bf, 0x6750a2, 0xc247ac],
-      rightCars: [0x03b3c3, 0x0e5ea5, 0x324555],
-      sticks: 0x03b3c3,
+      leftCars: [0x78716c, 0x57534e, 0x44403c],
+      rightCars: [0x78716c, 0x57534e, 0x44403c],
+      sticks: 0x78716c,
     },
   },
 }) => {

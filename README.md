@@ -1,37 +1,134 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# John Ruttan - Personal Portfolio Website
 
-## Getting Started
+A modern, interactive portfolio website built with Next.js 15, React, and advanced visual effects. This portfolio showcases my journey as a fullstack engineer with dynamic animations, glassmorphism design, and engaging user interactions.
 
-First, run the development server:
+## 🚀 Features
 
+- **Interactive Dither Background**: Custom WebGL-based background animation
+- **Smooth Animations**: Powered by Framer Motion and GSAP
+- **Glassmorphism Design**: Modern UI with backdrop blur effects
+- **Responsive Design**: Optimized for all devices
+- **Dynamic Content**: Real-time animations and interactive elements
+- **Modern Tech Stack**: Next.js 15, React 19, Tailwind CSS 4
+
+## 🎯 Sections
+
+1. **Hero Section**: Dynamic introduction with animated text and social links
+2. **About Section**: Personal story with animated statistics and achievements
+3. **Skills Section**: Technical skills with animated progress bars
+4. **Experience Section**: Professional timeline with interactive elements
+5. **Projects Section**: Featured projects with detailed descriptions and technologies
+6. **Contact Section**: Professional contact information and availability status
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Styling**: Tailwind CSS 4, Custom CSS animations
+- **Animations**: Framer Motion, GSAP, React Spring
+- **3D Graphics**: Three.js, React Three Fiber
+- **Icons**: React Icons, Lucide React
+- **Deployment**: Vercel (recommended)
+
+## 📦 Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/johnruttan/portfolio.git
+cd portfolio
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## 🎨 Customization
 
-To learn more about Next.js, take a look at the following resources:
+### Personal Information
+Update the personal information in `app/page.js`:
+- Name, title, and bio
+- Skills and experience levels
+- Project details and technologies
+- Contact information and social links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Styling
+Modify the design in:
+- `app/globals.css`: Custom animations and global styles
+- `tailwind.config.js`: Tailwind customizations
+- Component-specific styles within JSX
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Content
+Replace placeholder content with your own:
+- Project descriptions and links
+- Professional experience
+- Skills and competencies
+- Contact information
 
-## Deploy on Vercel
+## 🔧 Available Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm run start`: Start production server
+- `npm run lint`: Run ESLint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# portfolio
+## 📁 Project Structure
+
+```
+portfolio/
+├── app/
+│   ├── page.js          # Main portfolio page
+│   ├── globals.css      # Global styles and animations
+│   └── layout.js        # App layout
+├── components/
+│   ├── nav.jsx          # Navigation component
+│   └── ui/              # UI components library
+├── public/
+│   ├── resume.pdf       # Downloadable resume
+│   └── assets/          # Images and static files
+└── lib/                 # Utility functions
+```
+
+## 🎪 Interactive Components
+
+- **CardSwap**: Animated project carousel
+- **ShinyText**: Animated text effects
+- **CountUp**: Animated number counters
+- **Liquid Glass Navigation**: Glassmorphism navigation
+- **Dither Background**: Dynamic background animation
+
+## 🌟 Performance Features
+
+- **Optimized Images**: Next.js Image optimization
+- **Lazy Loading**: Components load when needed
+- **Smooth Scrolling**: CSS scroll-behavior and animations
+- **Responsive Design**: Mobile-first approach
+- **SEO Friendly**: Meta tags and semantic HTML
+
+## 🔗 Links
+
+- **Portfolio**: [Live Demo](https://johnruttan.dev)
+- **LinkedIn**: [linkedin.com/in/johnruttan](https://linkedin.com/in/johnruttan)
+- **GitHub**: [github.com/johnruttan](https://github.com/johnruttan)
+- **Email**: john.ruttan@email.com
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+- **React Bits**: For the amazing UI components
+- **Framer Motion**: For smooth animations
+- **Tailwind CSS**: For utility-first styling
+- **Three.js**: For 3D graphics capabilities
+
+---
+
+Built with ❤️ by John Ruttan

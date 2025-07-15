@@ -135,7 +135,238 @@ body {
 
 .my-underline {
   text-decoration: underline;
-  text-decoration-color: #06b6d4;      /* cyan-400 */
+  text-decoration-color: #78716c;
   text-decoration-thickness: 3px;
   text-underline-offset: 13px;
+}
+
+/* Custom animations for portfolio */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(217, 119, 6, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(217, 119, 6, 0.8), 0 0 40px rgba(217, 119, 6, 0.3);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Glassmorphism utility class */
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #78716c, #57534e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #78716c, #57534e);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #b45309, #047857);
+}
+
+/* Hover effects for interactive elements */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Text selection customization */
+::selection {
+  background-color: rgba(217, 119, 6, 0.3);
+  color: white;
+}
+
+/* Smooth focus outline */
+.focus-outline {
+  outline: 2px solid #78716c;
+  outline-offset: 2px;
+}
+
+/* Custom button hover effects */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-glow:hover::before {
+  left: 100%;
+}
+
+/* Skill bar animation */
+.skill-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-bar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 100%;
+  }
+}
+
+/* Timeline connector animation */
+.timeline-connector {
+  position: relative;
+}
+
+.timeline-connector::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 0;
+  background: linear-gradient(to bottom, #78716c, #57534e);
+  animation: line-grow 2s ease-out forwards;
+}
+
+@keyframes line-grow {
+  to {
+    height: 100%;
+  }
+}
+
+/* Card hover effects */
+.project-card {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.1), rgba(5, 150, 105, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.hero-button {
+  text-decoration: underline;
+  text-decoration-color: #78716c;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 13px;
+}
+
+.text-slide-in {
+  background: linear-gradient(135deg, #78716c, #57534e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #78716c, #57534e);
+  transition: left 0.5s;
+}
+
+.hero-button:hover::before {
+  left: 100%;
+  outline: 2px solid #78716c;
+}
+
+.liquid-progress::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, #78716c, #57534e);
+  animation: shimmer 2s infinite;
 }

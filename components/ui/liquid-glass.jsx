@@ -105,7 +105,7 @@ export function LiquidGlass({
       {/* Animated liquid effect */}
       <div 
         className={cn(
-          "absolute inset-0 bg-gradient-to-r from-cyan-400/30 to-blue-500/30 blur-sm",
+          "absolute inset-0 bg-gradient-to-r from-stone-400/30 to-slate-500/30 blur-sm",
           "transition-all duration-500 ease-out",
           isHovered ? "opacity-100 scale-110" : "opacity-0 scale-100"
         )}
